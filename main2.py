@@ -4,7 +4,7 @@ import streamlit as st
 import os
 st.title("AI Business idea Validation for Start Up")
 key = os.getenv("GOOGLE_API_KEY")
-prime = genai.Client(api_key = "key")
+prime = genai.Client(api_key = key)
 
 audience = st.text_input ("Who are your audience")
 age_group = st.text_input("Which are your age group")
